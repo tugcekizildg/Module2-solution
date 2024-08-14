@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100vh;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card1,
+.card2,
+.card3 {
+    background-color: gray;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+h4.rose-beef {
+    background-color: pink;
+    width: 150px;
+    height: 30px;
+    margin-left: auto;
+    border: 1px solid black;
+}
+
+h4.chicken-salad {
+    background-color: rgb(214, 148, 26);
+    width: 150px;
+    height: 30px;
+    margin-left: auto;
+    border: 1px solid black;
+}
+
+h4.spagetti {
+    background-color: rgb(41, 197, 67);
+    width: 150px;
+    height: 30px;
+    margin-left: auto;
+    border: 1px solid black;
+}
+
+p {
+    padding: 20px;
+    text-align: left;
+}
+
+/****** Desktop Version *****/
+@media (min-width: 992px) {
+
+    .card1,
+    .card2,
+    .card3 {
+        display: inline-block;
+        margin: 10px;
+        width: 30.3%;
+    }
+
+}
+
+/****** Tablet Version *********/
+@media (min-width: 768px) and (max-width:991px) {
+
+    .card1,
+    .card2 {
+        display: inline-block;
+        margin-right: 20px;
+        width: 30%;
+    }
+
+    .card3 {
+        display: block;
+        width: 60%;
+
+    }
+}
+
+/***** Mobile Version *******/
+
+@media(max-width: 767px) {
+
+    .card1,
+    .card2,
+    .card3 {
+        display: block;
+    }
+}
